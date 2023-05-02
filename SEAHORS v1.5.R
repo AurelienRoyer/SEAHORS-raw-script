@@ -2376,7 +2376,7 @@ output$brushed<- renderPrint({
 
     list.parameter.info<-var.function(input$var1)
     var2<-list.parameter.info[[2]]
-
+    var<-list.parameter.info[[1]]
     # switch(input$var1,
     #        xy={var<-setXX()
     #        var2<-setYY()       },
