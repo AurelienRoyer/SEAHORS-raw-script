@@ -3414,10 +3414,10 @@ observeEvent(input$transferxyz,{
   observeEvent(input$button_example, {
   updateTabsetPanel(session, "mainpanel",
                       selected = "Load data")
-    url_file="https://raw.githubusercontent.com/AurelienRoyer/SEAHORS/71daba138cf0666e996d7d180130afedddd83a5f/Example%20dataset/Discamps%20et%20al%202019%20S2.csv"
+url_file="https://github.com/AurelienRoyer/SEAHORS-raw-script/blob/5b5c004cda736eca6d7b6c7a38b64ad26291f71a/Example%20dataset/Discamps%20et%20al%202019%20S2.xlsx"
     input_file1.name("Discamps%20et%20al%202019%20S2.csv")
     input_file1.datapath(url_file)
-    url_file2="https://raw.githubusercontent.com/AurelienRoyer/SEAHORS/main/Example%20dataset/REMONTAGES.csv"
+    url_file2="https://github.com/AurelienRoyer/SEAHORS-raw-script/blob/5b5c004cda736eca6d7b6c7a38b64ad26291f71a/Example%20dataset/REMONTAGES.xlsx"
     df$file.fit<-read.csv(url_file2, sep=";",header = T)
     getdata.launch(1)
 
