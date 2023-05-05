@@ -2930,7 +2930,7 @@ output$contents <- renderTable({
   })
 
   ratio.slice<-reactiveVal(1)
-  observeEvent(c(input$range2dslice, input$step2dslice,input$advanced.slice), {
+  observeEvent(c(input$range2dslice, input$step2dslice,input$advanced.slice,input$xslider,input$yslider,input$zslider), {
     req(!is.null(input$range2dslice))
     ratio.slice<-(max(input$range2dslice)-min(input$range2dslice))/input$step2dslice
     ratio.slice<-ceiling(ratio.slice)
